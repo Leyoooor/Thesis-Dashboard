@@ -9,7 +9,7 @@
   /* ===== Colors ===== */
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
-  --primary-color: #0000FF;
+  --primary-color: #0000ff;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
   --text-color: #707070;
@@ -208,8 +208,6 @@ body.dark .sidebar li a:hover .text {
   color: var(--text-color);
 }
 
-
-
 .sidebar .menu-bar {
   height: calc(100% - 55px);
   display: flex;
@@ -307,10 +305,61 @@ body.dark .home .text {
   color: var(--text-color);
 }
 .background_image {
-	position: absolute;
-  	  right: 0%;
-	    transform: translateY(-25%);
+  position: absolute;
+  right: 0%;
+  transform: translateY(-25%);
   width: 100%;
   height: 140%;
-   filter:blur(10px);
+  filter: blur(10px);
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  background-color: #d9d9d9;
+  padding: 2rem;
+  color: white;
+  z-index: 1;
+  width: 100%;
+}
+
+.header img {
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 5px;
+  width: 50px;
+}
+
+.header .image-text {
+  margin: auto 0;
+}
+
+.user-details {
+  margin-left: 1rem;
+}
+
+.user-name {
+  color: black;
+}
+
+.user-role {
+  color: #7d7d7d;
+}
+
+.user-search {
+  margin-left: auto;
+  background-color: #c5c5c5;
+  border-radius: 32px;
+  border: 2px solid #b5b5b5;
+}
+
+.user-search i {
+  margin: auto 1rem;
+}
+
+.user-search input {
+  border: 0;
+  padding: 1rem;
+  background-color: unset;
+  color: white;
 }
